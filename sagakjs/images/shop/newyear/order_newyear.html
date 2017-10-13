@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <title>사색조각</title>
+   <style>
+      @font-face {
+         font-family: 'BMYEONSUNG_ttf';
+         src : url(./font/BMYEONSUNG_ttf.ttf) format('truetype');
+      }
+      @font-face {
+         font-family: 'SeoulNamsanJangB';
+         src : url(./font/SeoulNamsanJangB.ttf) format('truetype');
+      }
+      @font-face {
+         font-family: 'SeoulNamsanJangM';
+         src : url(./font/SeoulNamsanJangM.ttf) format('truetype');
+      }
+
+      body {
+         #background-color:#fecea8;
+         font-family: SeoulNamsanJangM, Verdana, "Trebuchet MS", sans-serif;
+         margin: 0px;
+      }
+
+      nav ul {
+         background-color:#99B898;
+         text-align: center;
+      }
+      nav li {
+	 padding:10px;
+         display:inline;
+      }
+
+      a {color:white;text-decoration:none}
+      a:hover {color:#2A363B;}
+
+      
+      div {
+         
+      }
+      #header {
+         padding:20px;
+         margin-bottom:20px;
+         text-align:center;
+         background-color:#fecea8;
+      }
+      #contents {
+         width: 80%;
+         #height:850px;
+         padding:10px;
+         float:left;
+         margin-bottom:20px;
+         #background-color:red;
+      }
+      #imgcon {
+         width:30%;
+         float:left;
+         margin-bottom:20px;
+         #background-color:green;
+      }
+      #sidebar {
+         width:12%;
+         height:80%;
+         padding:10px;
+         float:left;
+      }
+      #footer {
+         clear:both;
+         padding:20px;
+         background-color:#99b898;
+      }
+      #list {
+         border-collapse:collapse;
+      }
+      #list thead{
+         color:white;
+         font-weight:bold;
+         text-align:center;
+         background-color:#ff847c;
+      }
+      #list tr, td{
+         border:1px solid #2a363b;
+      }
+      #list_legal {
+         border-collapse:collapse;
+         text-align:center;
+      }
+      #list_legal tr,td {
+         border:1px solid #2a363b;
+      }
+      #list_legal tr.alt td {
+         background-color:#ff847c;
+         color:white;
+         text-align:center;
+         font-weight:bold;
+      }
+      h1 {color:white; font-family: SeoulNamsanJangB;}
+      h3 {color:#ff847c;}
+      p {color:#2A363B;}
+      button { font-family: inherit}
+      
+   </style>
+
+</head>
+<body>
+<div id="footer">
+<nav>
+   <ul id = "menu">
+   <li><a href="sagakjs_home.html" target="_self">Home</a></li>
+   <li><a href="sagakjs_about.html" target="_self">About</a></li>
+   <li><a href="sagakjs_shop.html" target="_self" style="color:#fecea8;"><b>Shop</b></a></li>
+   <li><a href="sagakjs_schedule.html" target="_self">Schedule</a></li>
+   <li><a href="sagakjs_fa.html" target="_self">F&A</a></li>
+   </ul>
+</nav>
+</div>
+
+<div id="header">
+   <h1>SHOP</h1>
+   <h4 style="color:#2a363b;">전해지면 더 좋은 사각<br>소중한 사람들에게 선물해보아요.</h3>
+</div>
+
+<div id="footer" style="background-color:white;">
+</div>
+
+<div id="sidebar">
+</div>
+
+<div id="contents">
+   <h2>사각 새해 엽서 주문하기</h2>
+   <img src="./newyear.png" alt="sagakjs_newyear" width="40%;"/>
+
+   <br><br>
+
+   <fieldset>
+      <legend>주문자 정보</legend>
+      주문자명 <input type="text" id="name" placeholder="입금자명과 동일" required><br>
+      전화번호 <input type="tel" id="tel1" placeholder="ex. 010-1234-5678">
+   </fieldset><br>
+
+   <fieldset>
+      <legend>배송지 정보</legend>
+      주    소 <input type="text" size="40" id="addr" required><br>
+      메    모 <input type="tel" size="40" id="tel1" placeholder="택배기사에게 남기실 메모">
+   </fieldset><br>
+
+   <fieldset>
+      <legend>주문 정보</legend>
+      주문수량
+      <action="">
+      <select num="갯수">
+      <option value="default" selected>주문 수량 선택</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      </select>
+      <name="input" action="getfeedback.jsp" method="get"><br>
+      주문글귀
+      <textarea name = "feedback" rows=5" cols="50"></textarea>
+      <name="input" action="getfeedback.jsp" method="get"><br>
+      요청사항
+      <textarea name = "feedback" rows=5" cols="50"></textarea>
+      <hr />
+      <input type="submit" value="주문하기">
+      <input type="reset" value="다시쓰기">
+   </fieldset>
+</div>
+
+
+<button style="background-color:#ff847c; border-radius:15px;border-color:#ff847c"><h3 style="text-align:center;"><a href="#menu">Move to the Top</a></h3></button>
+
+<div id="footer">
+   <p style="text-align:center; color:white;"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ⓒ 2014-2017 sagakjs All Rights Reserved</em></p>
+   <nav>
+   <ul>
+   <li style="color:#fecea8;"><b>Follow On</b></li>
+   <li><a href="https://www.facebook.com/sagakjs" target="_blank">Facebook</a></li>
+   <li><a href="https://www.instagram.com/sagakjs/" target="_blank">Instagram</a></li>
+   <li><a href="http://pf.kakao.com/_xhxfsnu" target="_blank">KakaoTalk</a></li>
+   <li><a href="https://blog.naver.com/sagakjs" target="_blank">Blog</a></li>
+   </ul>
+   </nav>
+</div>
+
+</body>
+</html>
