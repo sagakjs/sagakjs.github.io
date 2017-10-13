@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="utf-8">
+   <title>사색조각</title>
+   <style>
+      @font-face {
+         font-family: 'BMYEONSUNG_ttf';
+         src : url(./font/BMYEONSUNG_ttf.ttf) format('truetype');
+      }
+      @font-face {
+         font-family: 'SeoulNamsanJangB';
+         src : url(./font/SeoulNamsanJangB.ttf) format('truetype');
+      }
+      @font-face {
+         font-family: 'SeoulNamsanJangM';
+         src : url(./font/SeoulNamsanJangM.ttf) format('truetype');
+      }
+
+      body {
+         #background-color:#fecea8;
+         font-family: SeoulNamsanJangM, Verdana, "Trebuchet MS", sans-serif;
+         margin: 0px;
+      }
+
+      nav ul {
+         background-color:#99B898;
+         text-align: center;
+      }
+      nav li {
+	 padding:10px;
+         display:inline;
+      }
+
+      a {color:white;text-decoration:none}
+      a:hover {color:#2A363B;}
+
+      
+      div {
+         
+      }
+      #header {
+         padding:20px;
+         margin-bottom:20px;
+         text-align:center;
+         background-color:#fecea8;
+      }
+      #contents {
+         width: 80%;
+         #height:850px;
+         padding:10px;
+         float:left;
+         margin-bottom:20px;
+         #background-color:red;
+      }
+      #imgcon {
+         width:30%;
+         float:left;
+         margin-bottom:20px;
+         #background-color:green;
+      }
+      #sidebar {
+         width:12%;
+         height:80%;
+         padding:10px;
+         float:left;
+      }
+      #footer {
+         clear:both;
+         padding:20px;
+         background-color:#99b898;
+      }
+      #list {
+         border-collapse:collapse;
+      }
+      #list thead{
+         color:white;
+         font-weight:bold;
+         text-align:center;
+         background-color:#ff847c;
+      }
+      #list tr, td{
+         border:1px solid #2a363b;
+      }
+      #list_legal {
+         border-collapse:collapse;
+         text-align:center;
+      }
+      #list_legal tr,td {
+         border:1px solid #2a363b;
+      }
+      #list_legal tr.alt td {
+         background-color:#ff847c;
+         color:white;
+         text-align:center;
+         font-weight:bold;
+      }
+      h1 {color:white; font-family: SeoulNamsanJangB;}
+      h3 {color:#ff847c;}
+      p {color:#2A363B;}
+      button { font-family: inherit}
+      
+   </style>
+
+</head>
+<body>
+<div id="footer">
+<nav>
+   <ul id = "menu">
+   <li><a href="sagakjs_home.html" target="_self">Home</a></li>
+   <li><a href="sagakjs_about.html" target="_self">About</a></li>
+   <li><a href="sagakjs_shop.html" target="_self">Shop</a></li>
+   <li><a href="sagakjs_schedule.html" target="_self">Schedule</a></li>
+   <li><a href="sagakjs_fa.html" target="_self">F&A</a></li>
+   <li><a href="sagakjs_qa.html" target="_self" style="color:#fecea8;"><b>Q&A</b></a></li>
+   </ul>
+</nav>
+</div>
+
+<div id="header">
+   <h1>Q&A</h1>
+</div>
+
+<div id="sidebar">
+</div>
+
+<div id="contents">
+<form>
+   <h2>질문 및 상담 접수하기</h2>
+   <br><br>
+
+   <fieldset>
+      <legend>질문자 정보</legend>
+      <form>
+      질문자명 <input type="text" id="name" required><br>
+      비밀번호 <input type="password" name="pass" placeholder="답변 확인시 필요">
+      </form>
+   </fieldset><br>
+
+   <fieldset>
+      <legend>질문 및 상담 사항</legend>
+      질문종류
+      <action="">
+      <select jongryu="종류">
+      <option value="default" selected>질문 종류 선택</option>
+      <option value="엽서">엽서</option>
+      <option value="노트">노트</option>
+      <option value="책갈피">책갈피</option>
+      <option value="주문제작 전반">주문제작 전반</option>
+      <option value="배송">배송</option>
+      <option value="전시">전시</option>
+      <option value="외주">외주</option>
+      <option value="플리마켓">플리마켓</option>
+      <option value="클래스">캘리그라피 클래스</option>
+      </select>
+      <name="input" action="getfeedback.jsp" method="get"><br>
+      문의사항
+      <textarea name = "feedback" rows=5" cols="50"></textarea>
+      <hr />
+      문의사항을 누구나 볼 수 있게 하시겠습니까?
+      <input type="radio" name="secret" value="public">공개
+      <input type="radio" name="secret" value="secret">비공개
+      <br><br>
+      <input type="submit" value="접수하기">
+      <input type="reset" value="다시쓰기">
+
+   </fieldset>
+</form>
+</div>
+
+
+<button style="background-color:#ff847c; border-radius:15px;border-color:#ff847c"><h3 style="text-align:center;"><a href="#menu">Move to the Top</a></h3></button>
+
+<div id="footer">
+   <p style="text-align:center; color:white;"><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ⓒ 2014-2017 sagakjs All Rights Reserved</em></p>
+   <nav>
+   <ul>
+   <li style="color:#fecea8;"><b>Follow On</b></li>
+   <li><a href="https://www.facebook.com/sagakjs" target="_blank">Facebook</a></li>
+   <li><a href="https://www.instagram.com/sagakjs/" target="_blank">Instagram</a></li>
+   <li><a href="http://pf.kakao.com/_xhxfsnu" target="_blank">KakaoTalk</a></li>
+   <li><a href="https://blog.naver.com/sagakjs" target="_blank">Blog</a></li>
+   </ul>
+   </nav>
+</div>
+
+</body>
+</html>
